@@ -20,7 +20,7 @@ import java.time.LocalDateTime;
                 @UniqueConstraint(name = "unique_patient_name_dob", columnNames = {"name", "birthDate"})
         },
         indexes = {
-                @Index(name = "idx_patient_dob", columnList = "columnNames")
+                @Index(name = "idx_patient_birthDate", columnList = "birthDate")
         }
 )
 public class Patient {
